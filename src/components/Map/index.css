@@ -1,0 +1,27 @@
+#map {
+    width: 70%;
+    height: 100%;
+}
+
+.selected {
+    fill: rgb(85, 0, 233);
+}
+
+.selected :hover {
+    fill: rgb(85, 0, 233)
+}
+.map-shapes {
+    fill: #222;
+    stroke: rgb(63, 61, 68);
+  }
+  
+.map-shapes:not(.selected) :hover {
+    fill: rgb(157, 84, 252)
+}
+
+.data-overlay {
+    fill: red;
+    fill-opacity: 0.2;
+    stroke: 0.5px;
+    pointer-events: none;
+}

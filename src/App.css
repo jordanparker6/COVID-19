@@ -1,0 +1,16 @@
+#App {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#loading-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
