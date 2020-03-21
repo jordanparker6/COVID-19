@@ -1,6 +1,4 @@
 node_modules
-yarn.lock
 /node_modules
 yarn-debug.log
 .DS_Store
-dist
