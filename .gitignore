@@ -3,5 +3,4 @@ yarn.lock
 /node_modules
 yarn-debug.log
 .DS_Store
-/*.env
 dist

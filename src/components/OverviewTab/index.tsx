@@ -30,7 +30,7 @@ export default function OverviewTab({ data, country }: Props) {
   const percentFormat = format(',.2%');
   const commaFormat = format(',');
 
-  const mortalityRate = deaths / (active + deaths)
+  const mortalityRate = deaths / (recovered + deaths + active)
   const casesPerCap = (country)? `${customFormat(confirmed / parseInt(country.POP2018) * 100000)} cases per 100,000`: null
 
   return (
@@ -48,7 +48,7 @@ export default function OverviewTab({ data, country }: Props) {
         <div className="tile">
           <div className="tile-title">Mortality Rate</div>
           <div className='tile-number'>{(confirmed)?`${percentFormat(mortalityRate)}*`:null}</div>
-          <div className="tile-footer">*Closed Cases</div>
+          <div className="tile-footer">*Includes Open Cases</div>
         </div>
       </React.Fragment>
   )
