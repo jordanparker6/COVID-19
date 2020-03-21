@@ -1,0 +1,10 @@
+#contact-icon-list {
+    height: 100%;
+    margin: 1rem;
+}
+
+.contact-icon svg {
+    width: 4vw;
+    height: 4vh;
+    color: white;
+}

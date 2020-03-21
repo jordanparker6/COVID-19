@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as d3 from 'd3';
 import moment from 'moment'
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 import './App.css';
 import { CSVData, DataObj, CountryData } from './types';
@@ -10,7 +11,8 @@ import DataPanel from './components/DataPanel';
 import OverviewTab from './components/OverviewTab';
 import InfoBox from './components/InfoBox';
 import DateSlider from './components/DateSlider';
-import LinearProgress from '@material-ui/core/LinearProgress';
+import ContactIcons from './components/ContactIcons';
+
 
 const geoJSONPath = 'geojson/countries.geojson';
 
@@ -48,16 +50,20 @@ export default function App() {
 
     return (
       <div id="App">
-      <Map geoJSONPath={geoJSONPath} data={data.confirmed} onClickDataPoint={(d) => setCountry(d)}/>
-      <DataPanel>
-        <OverviewTab data={parseData(data, country)} country={country}/>
-        <div>
-          <div>Forecast Tab</div>
-          <div>Under Development</div>
-        </div>
-      </DataPanel>
-      <InfoBox country={country}/>
-      <DateSlider date={date} minDate={minDate} maxDate={maxDate} onChange={(date: number) => setDate(date)}/>
+        <Map geoJSONPath={geoJSONPath} data={data.confirmed} onClickDataPoint={(d) => setCountry(d)}/>
+        <DataPanel>
+          <OverviewTab data={parseData(data, country)} country={country}/>
+          <div>
+            <div>Forecast Tab</div>
+            <div>Under Development</div>
+          </div>
+        </DataPanel>
+        <InfoBox country={country}/>
+        <div id="bottom-container">
+          <DateSlider date={date} minDate={minDate} maxDate={maxDate} onChange={(date: number) => setDate(date)}/>
+          <ContactIcons/>
+      </div>
+      
     </div>
   );
 
