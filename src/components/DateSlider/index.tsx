@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
 import Button from '@material-ui/core/Button';
@@ -10,7 +10,7 @@ const theme = createMuiTheme({
             type: "dark",
             primary: {
                 main: "rgb(85, 0, 233)",
-                contrastText: '#ffcc00'
+                contrastText: '#B3B3B3'
               },
               secondary: {
                 main: '#242424',
@@ -24,32 +24,45 @@ export default function DateSlider(props:Props) {
   const minDays = 0;
   const maxDays = (props.maxDate- props.minDate)  / (1000*60*60*24);
   const [value, setValue] = useState(maxDays);
+  const [play, setPlay] = useState(false);
+
+  useEffect(intervalEffect, [play, value])
 
   const valueToDate = (value:number) => props.minDate + value * 1000*60*60*24
-
-  function handleChange(e: React.ChangeEvent<{}>, value: number | number[]) {
-    setValue(value as number)
-    props.onChange(valueToDate(value as number));
+  
+  function setDateAndValue(value:number) {
+    setValue(value)
+    props.onChange(valueToDate(value))
   }
 
-  function annimateSlider() {
-    for (let i = 0; i <= maxDays; i++) {
-      
-      setTimeout(()=>{
-        console.log(value);
-        setValue(i);
-        props.onChange(valueToDate(value))
-      }, 1 * 1000)
-    }
+  function handleChange(e: React.ChangeEvent<{}>, value: number | number[]) {
+    setDateAndValue(value as number)
+  }
 
+  function intervalEffect() {
+    let interval: null | NodeJS.Timeout = null
+    if (play && (value <= (maxDays -1))) {
+      interval = setInterval(() => {
+        setDateAndValue(value + 1)
+      }, 250);
+    } else {
+      clearInterval(interval!);
+      setPlay(false)
+    }
+    return () => clearInterval(interval!);
+  }
+
+  function onClickPlay() {
+    setValue(0);
+    setPlay(true);
   }
 
   return (
     
     <ThemeProvider theme={theme}>
       <div id="date-slider">
-        <div>COVID-19 | {new Date(props.date).toDateString()}</div>
-        <div id="date-slider-annimation">
+        <div className="date-slider-title">WHO Situation Report | {new Date(props.date).toDateString()}</div>
+        <div className="date-slider-container">
           <Slider 
           value={value}
           valueLabelDisplay="auto"
@@ -61,14 +74,14 @@ export default function DateSlider(props:Props) {
           />
           <Button 
           style={{marginLeft: '1rem'}}
-          onClick={annimateSlider}
-          variant="outlined"
+          onClick={onClickPlay}
+          variant="contained"
           color="primary"
           >
             Play
           </Button>
         </div>
-        <div>Date Slider</div>    
+        <div className="date-slider-footer">Date Slider</div>    
       </div>
     </ThemeProvider>
       

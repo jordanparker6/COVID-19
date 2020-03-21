@@ -37,7 +37,7 @@ export default function OverviewTab({ data, country }: Props) {
       <React.Fragment>
         <div className="tile">
           <div className="tile-title">Confirmed Cases</div>
-          <text className="tile-number">{commaFormat(confirmed)}</text>
+          <div className="tile-number">{commaFormat(confirmed)}</div>
           <div className="tile-footer">{casesPerCap}</div>
         </div>
         <div className="tile">
@@ -47,7 +47,7 @@ export default function OverviewTab({ data, country }: Props) {
         </div>
         <div className="tile">
           <div className="tile-title">Mortality Rate</div>
-          <text className='tile-number'>{(confirmed)?`${percentFormat(mortalityRate)}*`:null}</text>
+          <div className='tile-number'>{(confirmed)?`${percentFormat(mortalityRate)}*`:null}</div>
           <div className="tile-footer">*Closed Cases</div>
         </div>
       </React.Fragment>

@@ -6,11 +6,15 @@
     margin: 1rem;
     text-align: left;
     color: #B3B3B3;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
 }
 
-#date-slider-annimation {
+.date-slider-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.date-slider-footer {
+    font-size: 1.0vw;
 }

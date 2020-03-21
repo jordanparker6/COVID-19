@@ -17,7 +17,7 @@ export default function DataPanel(props:Props) {
     return (
         <div id="info-box">
             <p>{name}</p>
-            <p>{(props.country)? `Populuation: ${pop}M`: null}</p>
+            <p>{(props.country)? `Populuation: ${pop}M`: "COVID-19"}</p>
         </div>
     );
 }
