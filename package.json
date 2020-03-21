@@ -1,15 +1,13 @@
 {
-  "name": "test",
+  "name": "covid19-datavis",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "csv-parse": "^4.8.8",
     "d3": "^5.15.0",
-    "plotly.js": "^1.52.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-plotly.js": "^2.4.0",
     "react-scripts": "3.4.0",
     "react-swipeable-views": "^0.13.9"
   },
@@ -35,14 +33,10 @@
     ]
   },
   "devDependencies": {
-    "@types/bootstrap": "^4.3.1",
     "@types/d3": "^5.7.2",
     "@types/node": "^12.0.0",
-    "@types/plotly.js": "^1.44.33",
     "@types/react": "^16.9.0",
-    "@types/react-bootstrap": "^0.32.20",
     "@types/react-dom": "^16.9.0",
-    "@types/react-plotly.js": "^2.2.4",
     "@types/react-swipeable-views": "^0.13.0",
     "typescript": "~3.7.2"
   }

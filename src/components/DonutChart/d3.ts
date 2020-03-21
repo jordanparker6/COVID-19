@@ -38,11 +38,11 @@ export default class D3Component {
 
         if (data) {
             // add and colour the donut slices
-            const arcs = g.datum(data).selectAll('.slice').data(pie).enter()
-                          .append('g').attr('class', 'slice')
-                          .append('path')
-                          .attr('fill', (d: d3.PieArcDatum<Data>) => colour(d.data.label))
-                          .attr('d', arc);
+            g.datum(data).selectAll('.slice').data(pie).enter()
+             .append('g').attr('class', 'slice')
+             .append('path')
+             .attr('fill', (d: d3.PieArcDatum<Data>) => colour(d.data.label))
+             .attr('d', arc);
         }
 
         d3.selectAll<any, d3.PieArcDatum<Data>>('.slice path').call(toolTip);

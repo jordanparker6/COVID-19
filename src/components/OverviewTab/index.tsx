@@ -1,5 +1,4 @@
 import React from 'react';
-import Plot, { PlotParams } from 'react-plotly.js';
 import { format } from 'd3';
 
 import './index.css';
