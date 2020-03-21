@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import * as d3 from 'd3';
+import moment from 'moment'
 
 import './App.css';
 import { CSVData, DataObj, CountryData } from './types';
@@ -14,8 +15,8 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 const geoJSONPath = 'geojson/countries.geojson';
 
 export default function App() {
-  const minDate = new Date('2020-01-22').getTime()
-  let maxDate = new Date('2020-03-13').getTime()
+  const minDate = moment('1/22/2020', "MM/DD/YYYY").valueOf()
+  let maxDate = moment('3/19/2020', "MM/DD/YYYY").valueOf()
 
   const [country, setCountry] = useState<CountryData | null>(null);
   const [date, setDate] = useState<number>(maxDate);
@@ -26,7 +27,7 @@ export default function App() {
   useEffect(() => filterCSV(csv!, date), [csv, date])
 
   function fetchCSV(): void {
-    const dataPath = 'data/COVID-19.csv';
+    const dataPath = 'data/case_data.csv';
     d3.csv(dataPath).then(rawCSV => setCSV(parseCSV(rawCSV)));
   }
 
@@ -39,6 +40,7 @@ export default function App() {
         recovered: csv.filter(row => row.Date === date && row['Case_Type'] === 'Recovered')
       }
       setData(data)
+      maxDate = csv[0].Lastest_Date
     }
   }
 

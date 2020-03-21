@@ -4,10 +4,11 @@ export type CSVData = {
     Date: number,
     Cases: number,
     Case_Type: string,
-    'Country/Region': string, 
-    'Providence/Sate': string,
+    Country_Region: string, 
+    Providence_State: string,
     Difference: number,
-    Last_Update_Date: string
+    Lastest_Date: number,
+    Prep_Flow_Runtime: string
 }
 
 export type Data = {

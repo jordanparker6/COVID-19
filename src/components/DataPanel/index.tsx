@@ -37,7 +37,7 @@ const DataPanel: React.FC = ({ children }) => {
     function mapTabsToChildren(children: React.ReactNodeArray) {
         return children.map((child, i) => {
             return (
-                <TabPanel value={tab} index={i}>
+                <TabPanel key={i} value={tab} index={i}>
                     {child}
                 </TabPanel>
             )

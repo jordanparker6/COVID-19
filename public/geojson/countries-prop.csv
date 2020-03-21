@@ -1,0 +1,212 @@
+,ISO_3_CODE,ISO_2_CODE,AREA,NAME_1,POP2005,REGION,GMI_CNTRY,NAME_12,name,POP2018
+0,AFG,AF,65209,Afghanistan,25067407,Asia,AFG,Afghanistan,Afghanistan,37172386
+1,ALB,AL,2740,Albania,3153731,Europe,ALB,Albania,Albania,2866376
+2,DZA,DZ,238174,Algeria,32854159,NorthAfrica,DZA,Algeria,Algeria,42228429
+3,AND,AD,0,Andorra,73483,Europe,AND,Andorra,Andorra,77006
+4,AGO,AO,124670,Angola,16095214,Sub Saharan Africa,AGO,Angola,Angola,30809762
+5,AQ,ATA,0,Antarctica,0,Antarctica,ATA,Antarctica,Antarctica,0
+6,ATG,AG,44,Antigua and Barbuda,83039,Caribbean,ATG,Antigua and Barbuda,Antigua and Barbuda,96286
+7,ARG,AR,273669,Argentina,38747148,Latin America,ARG,Argentina,Argentina,44494502
+8,ARM,AM,2820,Armenia,3017661,Asia,ARM,Armenia,Armenia,2951776
+9,AUS,AU,768230,Australia,20310208,Australia,AUS,Australia,Australia,24992369
+10,AUT,AT,8245,Austria,8291979,Europe,AUT,Austria,Austria,8847037
+11,AZE,AZ,8260,Azerbaijan,8352021,Asia,AZE,Azerbaijan,Azerbaijan,9942334
+12,BHS,BS,1001,"Bahamas, The",323295,Caribbean,BHS,Bahamas,"Bahamas, The",385640
+13,BHR,BH,71,Bahrain,724788,Asia,BHR,Bahrain,Bahrain,1569439
+14,BGD,BD,13017,Bangladesh,15328112,Asia,BGD,Bangladesh,Bangladesh,161356039
+15,BRB,BB,43,Barbados,291933,Caribbean,BRB,Barbados,Barbados,286641
+16,BEL,BE,0,Belgium,10398049,Europe,BEL,Belgium,Belgium,11422068
+17,BLZ,BZ,2281,Belize,275546,Latin America,BLZ,Belize,Belize,383071
+18,BEN,BJ,11062,Benin,8490301,Sub Saharan Africa,BEN,Benin,Benin,11485048
+19,BMU,BM,5,Bermuda,64174,North America,BMU,Bermuda,Bermuda,63968
+20,BTN,BT,4700,Bhutan,637013,Asia,BTN,Bhutan,Bhutan,754394
+21,BOL,BO,108438,Bolivia,9182015,Latin America,BOL,Bolivia,Bolivia,11353142
+22,BIH,BA,5120,Bosnia and Herzegovina,3915238,Europe,BIH,Bosnia and Herzegovina,Bosnia and Herzegovina,3323929
+23,BWA,BW,56673,Botswana,1835938,Sub Saharan Africa,BWA,Botswana,Botswana,2254126
+24,BRA,BR,845942,Brazil,186830759,Latin America,BRA,Brazil,Brazil,209469333
+25,BRN,BN,527,Brunei,373831,Asia,BRN,Brunei Darussalam,Brunei,428962
+26,BGR,BG,11063,Bulgaria,7744591,Europe,BGR,Bulgaria,Bulgaria,7024216
+27,BFA,BF,27360,Burkina Faso,13933363,Sub Saharan Africa,BFA,Burkina Faso,Burkina Faso,19751535
+28,BDI,BI,2568,Burundi,7858791,Sub Saharan Africa,BDI,Burundi,Burundi,11175378
+29,BLR,BY,20748,Byelarus,9795287,Europe,BLR,Belarus,Byelarus,9485386
+30,KHM,KH,17652,Cambodia,13955507,Asia,KHM,Cambodia,Cambodia,16249798
+31,CMR,CM,46540,Cameroon,17795149,Sub Saharan Africa,CMR,Cameroon,Cameroon,25216237
+32,CAN,CA,909351,Canada,32270507,North America,CAN,Canada,Canada,37058856
+33,CPV,CV,403,Cape Verde,506807,Sub Saharan Africa,CPV,Cape Verde,Cape Verde,543767
+34,CAF,CF,62298,Central African Republic,4191429,Sub Saharan Africa,CAF,Central African Republic,Central African Republic,4666377
+35,TCD,TD,125920,Chad,10145609,Sub Saharan Africa,TCD,Chad,Chad,15477751
+36,CHL,CL,74880,Chile,16295102,Latin America,CHL,Chile,Chile,18729160
+37,CHN,CN,932743,China,1312978855,Asia,CHN,China,China,1392730000
+38,COL,CO,103870,Colombia,4494579,Latin America,COL,Colombia,Colombia,49648685
+39,COM,KM,223,Comoros,797902,Sub Saharan Africa,COM,Comoros,Comoros,832322
+40,COG,CG,34150,Congo,3609851,Sub Saharan Africa,COG,Congo,Congo,5244363
+41,CRI,CR,5106,Costa Rica,4327228,Latin America,CRI,Costa Rica,Costa Rica,4999441
+42,HRV,HR,5592,Croatia,455149,Europe,HRV,Croatia,Croatia,4089400
+43,CUB,CU,10982,Cuba,11259905,Caribbean,CUB,Cuba,Cuba,11338138
+44,CYP,CY,924,Cyprus,836321,Asia,CYP,Cyprus,Cyprus,1189265
+45,CZE,CZ,7727,Czech Republic,10191762,Europe,CZE,Czech Republic,Czech Republic,10625695
+46,DNK,DK,4243,Denmark,5416945,Europe,DNK,Denmark,Denmark,5797446
+47,DJI,DJ,2318,Djibouti,804206,Sub Saharan Africa,DJI,Djibouti,Djibouti,958920
+48,DMA,DM,75,Dominica,67827,Caribbean,DMA,Dominica,Dominica,71625
+49,DOM,DO,4838,Dominican Republic,9469601,Caribbean,DOM,Dominican Republic,Dominican Republic,10627165
+50,ECU,EC,27684,Ecuador,13060993,Latin America,ECU,Ecuador,Ecuador,17084357
+51,EGY,EG,99545,Egypt,72849793,NorthAfrica,EGY,Egypt,Egypt,98423595
+52,SLV,SV,2072,El Salvador,6668356,Latin America,SLV,El Salvador,El Salvador,6420744
+53,GNQ,GQ,2805,Equatorial Guinea,484098,Sub Saharan Africa,GNQ,Equatorial Guinea,Equatorial Guinea,1308974
+54,ERI,ER,10100,Eritrea,4526722,Sub Saharan Africa,ERI,Eritrea,Eritrea,
+55,EST,EE,4239,Estonia,1344312,Europe,EST,Estonia,Estonia,1320884
+56,ETH,ET,100000,Ethiopia,78985857,Sub Saharan Africa,ETH,Ethiopia,Ethiopia,109224559
+57,FLK,FK,1217,Falkland Islands (Islas Malvinas),2975,Latin America,FLK,Falkland Islands (Malvinas),Falkland Islands (Islas Malvinas),0
+58,FRO,FO,0,Faroe Islands,48205,Europe,FRO,Faroe Islands,Faroe Islands,48497
+59,FJI,FJ,1827,Fiji,828046,Asia,FJI,Fiji,Fiji,883483
+60,FIN,FI,30459,Finland,5246004,Europe,FIN,Finland,Finland,5518050
+61,FRA,FR,55010,France,60990544,Europe,FRA,France,France,66987244
+62,GUF,GF,8815,French Guiana,192099,Latin America,GUF,French Guiana,French Guiana,0
+63,PYF,PF,366,French Polynesia,255632,Pacific,PYF,French Polynesia,French Polynesia,277679
+64,GAB,GA,25767,Gabon,1290693,Sub Saharan Africa,GAB,Gabon,Gabon,2119275
+65,GMB,GM,1000,"Gambia, The",1617029,Sub Saharan Africa,GMB,Gambia,"Gambia, The",2280102
+66,PSE,PS,0,Gaza Strip,3762005,Asia,PSE,Palestine,Gaza Strip,4569087
+67,GEO,GE,6949,Georgia,4473409,Asia,GEO,Georgia,Georgia,3731000
+68,DEU,DE,34895,Germany,82652369,Europe,DEU,Germany,Germany,82927922
+69,GHA,GH,22754,Ghana,2253501,Sub Saharan Africa,GHA,Ghana,Ghana,29767108
+70,GRC,GR,12890,Greece,11099737,Europe,GRC,Greece,Greece,10727668
+71,GRL,GL,41045,Greenland,57475,North America,GRL,Greenland,Greenland,56025
+72,GRD,GD,34,Grenada,105237,Caribbean,GRD,Grenada,Grenada,111454
+73,GLP,GP,169,Guadeloupe,438403,Caribbean,GLP,Guadeloupe,Guadeloupe,0
+74,GTM,GT,10843,Guatemala,12709564,Latin America,GTM,Guatemala,Guatemala,17247807
+75,GIN,GN,24572,Guinea,9002656,Sub Saharan Africa,GIN,Guinea,Guinea,12414318
+76,GNB,GW,2812,Guinea-Bissau,1596929,Sub Saharan Africa,GNB,Guinea-Bissau,Guinea-Bissau,1874309
+77,GUY,GY,19685,Guyana,739472,Latin America,GUY,Guyana,Guyana,779004
+78,HTI,HT,2756,Haiti,9296291,Caribbean,HTI,Haiti,Haiti,11123176
+79,HND,HN,11189,Honduras,683411,Latin America,HND,Honduras,Honduras,9587522
+80,,,0,,0,Asia,,,Hong Kong,0
+81,HUN,HU,9210,Hungary,10086387,Europe,HUN,Hungary,Hungary,9768785
+82,ISL,IS,10025,Iceland,295732,Europe,ISL,Iceland,Iceland,353574
+83,IND,IN,297319,India,1134403141,Asia,IND,India,India,1352617328
+84,IDN,ID,181157,Indonesia,226063044,Asia,IDN,Indonesia,Indonesia,267663435
+85,IRN,IR,163620,Iran,69420607,Asia,IRN,Iran (Islamic Republic of),Iran,81800269
+86,IRQ,IQ,43737,Iraq,27995984,Asia,IRQ,Iraq,Iraq,38433600
+87,,,0,,0,Asia,,,Iraq-Saudi Arabia Neutral Zone,0
+88,IRL,IE,6889,Ireland,4143294,Europe,IRL,Ireland,Ireland,4853506
+89,IMY,,0,Isle of Man,78357,Europe,XIM,Isle of Man,Isle of Man,0
+90,ISR,IL,2171,Israel,6692037,Asia,ISR,Israel,Israel,8883800
+91,ITA,IT,29411,Italy,5864636,Europe,ITA,Italy,Italy,60431283
+92,CIV,CI,31800,Ivory Coast,18584701,Sub Saharan Africa,CIV,Cote d'Ivoire,Ivory Coast,25069229
+93,JAM,JM,1083,Jamaica,2682469,Caribbean,JAM,Jamaica,Jamaica,2934855
+94,SJM,SJ,0,Jan Mayen,0,Europe,SJM,Svalbard,Jan Mayen,0
+95,JPN,JP,36450,Japan,127896740,Asia,JPN,Japan,Japan,126529100
+96,JOR,JO,8824,Jordan,5544066,Asia,JOR,Jordan,Jordan,9956011
+97,KAZ,KZ,269970,Kazakhstan,15210609,Asia,KAZ,Kazakhstan,Kazakhstan,18276499
+98,KEN,KE,56914,Kenya,35598952,Sub Saharan Africa,KEN,Kenya,Kenya,51393010
+99,,,0,,0,Antarctica,,,Kerguelen,0
+100,KIR,KI,73,Kiribati,92003,Asia,KIR,Kiribati,Kiribati,115847
+101,PRK,KP,12041,"Korea, Peoples Republic of",23615611,Asia,PRK,"Korea, Democratic People's Republic of","Korea, Peoples Republic of",25549819
+102,KOR,KR,9873,"Korea, Republic of",47869837,Asia,KOR,"Korea, Republic of","Korea, Republic of",51635256
+103,KWT,KW,1782,Kuwait,2700,Asia,KWT,Kuwait,Kuwait,4137309
+104,KGZ,KG,19180,Kyrgyzstan,5203547,Asia,KGZ,Kyrgyzstan,Kyrgyzstan,6315800
+105,LAO,LA,23080,Laos,566391,Asia,LAO,Lao People's Democratic Republic,Laos,7061507
+106,LVA,LV,6205,Latvia,2301793,Europe,LVA,Latvia,Latvia,1926542
+107,LBN,LB,1023,Lebanon,401074,Asia,LBN,Lebanon,Lebanon,6848925
+108,LSO,LS,3035,Lesotho,1980831,Sub Saharan Africa,LSO,Lesotho,Lesotho,2108132
+109,LBR,LR,9632,Liberia,3441796,Sub Saharan Africa,LBR,Liberia,Liberia,4818977
+110,LBY,LY,175954,Libya,5918217,NorthAfrica,LBY,Libyan Arab Jamahiriya,Libya,6678567
+111,LIE,LI,16,Liechtenstein,34598,Europe,LIE,Liechtenstein,Liechtenstein,37910
+112,LTU,LT,6268,Lithuania,3425077,Europe,LTU,Lithuania,Lithuania,2789533
+113,LUX,LU,0,Luxembourg,456613,Europe,LUX,Luxembourg,Luxembourg,607728
+114,,,0,Macau,47309,Asia,MAC,Macau,Macau,0
+115,MKD,MK,2543,Macedonia,2033655,Europe,MKD,The former Yugoslav Republic of Macedonia,Macedonia,2082958
+116,MDG,MG,58154,Madagascar,18642586,Sub Saharan Africa,MDG,Madagascar,Madagascar,26262368
+117,MWI,MW,9408,Malawi,13226091,Sub Saharan Africa,MWI,Malawi,Malawi,18143315
+118,MYS,MY,32855,Malaysia,25652985,Asia,MYS,Malaysia,Malaysia,31528585
+119,MDV,MV,30,Maldives,295297,Pacific,MDV,Maldives,Maldives,515696
+120,MLI,ML,122019,Mali,1161109,Sub Saharan Africa,MLI,Mali,Mali,19077690
+121,MLT,MT,32,Malta,402617,Pacific,MLT,Malta,Malta,483530
+122,MTQ,MQ,106,Martinique,395896,Caribbean,MTQ,Martinique,Martinique,0
+123,MRT,MR,102522,Mauritania,2963105,Sub Saharan Africa,MRT,Mauritania,Mauritania,4403319
+124,MUS,MU,203,Mauritius,1241173,Sub Saharan Africa,MUS,Mauritius,Mauritius,1265303
+125,MEX,MX,190869,Mexico,104266392,Latin America,MEX,Mexico,Mexico,126190788
+126,MDA,MD,3288,Moldova,3876661,Europe,MDA,Republic of Moldova,Moldova,3545883
+127,MCO,MC,0,Monaco,325,Europe,MCO,Monaco,Monaco,38682
+128,MNG,MN,156650,Mongolia,2580704,Asia,MNG,Mongolia,Mongolia,3170208
+129,MNE,ME,0,Montenegro,607969,Europe,MNE,Montenegro,Montenegro,622345
+130,MAR,MA,44630,Morocco,30494991,NorthAfrica,MAR,Morocco,Morocco,36029138
+131,MOZ,MZ,78409,Mozambique,20532675,Sub Saharan Africa,MOZ,Mozambique,Mozambique,29495962
+132,MMR,MM,65755,Myanmar (Burma),47967266,Asia,MMR,Burma,Myanmar (Burma),53708395
+133,NAM,NA,82329,Namibia,2019677,Sub Saharan Africa,NAM,Namibia,Namibia,2448255
+134,NPL,NP,14300,Nepal,27093656,Asia,NPL,Nepal,Nepal,28087871
+135,NLD,NL,3388,Netherlands,1632769,Europe,NLD,Netherlands,Netherlands,17231017
+136,NCL,NC,1828,New Caledonia,234185,Asia,NCL,New Caledonia,New Caledonia,284060
+137,NZL,NZ,26799,New Zealand,4097112,Australia,NZL,New Zealand,New Zealand,4885500
+138,NIC,NI,12140,Nicaragua,5462539,Latin America,NIC,Nicaragua,Nicaragua,6465513
+139,NER,NE,126670,Niger,1326419,Sub Saharan Africa,NER,Niger,Niger,22442948
+140,NGA,NG,91077,Nigeria,141356083,Sub Saharan Africa,NGA,Nigeria,Nigeria,195874740
+141,MNP,MP,0,Northern Mariana Islands,80258,Pacific,MNP,Northern Mariana Islands,Northern Mariana Islands,56882
+142,NOR,NO,30625,Norway,4638836,Europe,NOR,Norway,Norway,5314336
+143,OMN,OM,30950,Oman,2507042,Asia,OMN,Oman,Oman,4829483
+144,PAK,PK,77088,Pakistan,158080591,Asia,PAK,Pakistan,Pakistan,212215030
+145,PAN,PA,7443,Panama,3231502,Latin America,PAN,Panama,Panama,4176873
+146,PNG,PG,45286,Papua New Guinea,6069715,Asia,PNG,Papua New Guinea,Papua New Guinea,8606316
+147,PRY,PY,39730,Paraguay,5904342,Latin America,PRY,Paraguay,Paraguay,6956071
+148,PER,PE,128000,Peru,27274266,Latin America,PER,Peru,Peru,31989256
+149,PHL,PH,29817,Philippines,84566163,Asia,PHL,Philippines,Philippines,106651922
+150,POL,PL,30629,Poland,38195558,Europe,POL,Poland,Poland,37978548
+151,PRT,PT,9150,Portugal,10528226,Europe,PRT,Portugal,Portugal,10281762
+152,PRI,PR,887,Puerto Rico,3946779,Caribbean,PRI,Puerto Rico,Puerto Rico,3195153
+153,QAT,QA,1100,Qatar,796186,Asia,QAT,Qatar,Qatar,2781677
+154,REU,RE,250,Reunion,785159,Sub Saharan Africa,REU,Reunion,Reunion,0
+155,ROU,RO,22987,Romania,21627557,Europe,ROM,Romania,Romania,19473936
+156,RUS,RU,1638094,Russia,143953092,Europe,RUS,Russia,Russia,144478050
+157,RWA,RW,2467,Rwanda,9233793,Sub Saharan Africa,RWA,Rwanda,Rwanda,12301939
+158,SMR,SM,0,San Marino,30214,Europe,SMR,San Marino,San Marino,33785
+159,STP,ST,96,Sao Tome and Principe,152622,Sub Saharan Africa,STP,Sao Tome and Principe,Sao Tome and Principe,211028
+160,SAU,SA,214969,Saudi Arabia,2361236,Asia,SAU,Saudi Arabia,Saudi Arabia,33699947
+161,SEN,SN,19253,Senegal,1177034,Sub Saharan Africa,SEN,Senegal,Senegal,15854360
+162,SYC,SC,46,Seychelles,85532,Sub Saharan Africa,SYC,Seychelles,Seychelles,96762
+163,SLE,SL,7162,Sierra Leone,5586403,Sub Saharan Africa,SLE,Sierra Leone,Sierra Leone,7650154
+164,SGP,SG,67,Singapore,4327468,Pacific,SGP,Singapore,Singapore,5638676
+165,SVK,SK,4808,Slovakia,5386995,Europe,SVK,Slovakia,Slovakia,5447011
+166,SVN,SI,2014,Slovenia,1999425,Europe,SVN,Slovenia,Slovenia,2067372
+167,SLB,SB,2799,Solomon Islands,472419,Asia,SLB,Solomon Islands,Solomon Islands,652858
+168,SOM,SO,62734,Somalia,8196395,Sub Saharan Africa,SOM,Somalia,Somalia,15008154
+169,ZAF,ZA,121447,South Africa,47938663,Sub Saharan Africa,ZAF,South Africa,South Africa,57779622
+170,ESP,ES,49904,Spain,43397491,Europe,ESP,Spain,Spain,46723749
+171,LKA,LK,6463,Sri Lanka,19120763,Asia,LKA,Sri Lanka,Sri Lanka,21670000
+172,,,0,,0,Caribbean,,,St. Christopher-Nevis,0
+173,LCA,LC,61,St. Lucia,16124,Caribbean,LCA,Saint Lucia,St. Lucia,181889
+174,VCT,VC,39,St. Vincent and the Grenadines,119137,Caribbean,VCT,Saint Vincent and the Grenadines,St. Vincent and the Grenadines,110210
+175,SDN,SD,237600,Sudan,36899747,Sub Saharan Africa,SDN,Sudan,Sudan,41801533
+176,SUR,SR,15600,Suriname,452468,Latin America,SUR,Suriname,Suriname,575991
+177,,,0,Svalbard,0,Europe,SJM,Svalbard,Svalbard,0
+178,SWZ,SZ,1720,Swaziland,1124529,Sub Saharan Africa,SWZ,Swaziland,Swaziland,1136191
+179,SWE,SE,41033,Sweden,9038049,Europe,SWE,Sweden,Sweden,10183175
+180,CHE,CH,4000,Switzerland,7424389,Europe,CHE,Switzerland,Switzerland,8516543
+181,SYR,SY,18378,Syria,18893881,Asia,SYR,Syrian Arab Republic,Syria,16906283
+182,,,0,Taiwan,0,Asia,TWN,Taiwan,Taiwan,0
+183,TJK,TJ,13996,Tajikistan,6550213,Asia,TJK,Tajikistan,Tajikistan,9100837
+184,TZA,TZ,88359,"Tanzania, United Republic of",38477873,Sub Saharan Africa,TZA,United Republic of Tanzania,"Tanzania, United Republic of",56318348
+185,THA,TH,51089,Thailand,63002911,Asia,THA,Thailand,Thailand,69428524
+186,TLS,TL,1487,Timor-Leste,1067285,Asia,TLD,Timor-Leste,Timor-Leste,1267972
+187,TGO,TG,5439,Togo,6238572,Sub Saharan Africa,TGO,Togo,Togo,7889094
+188,TON,TO,72,Tonga,99361,Pacific,TON,Tonga,Tonga,103197
+189,TTO,TT,513,Trinidad and Tobago,1323722,Caribbean,TTO,Trinidad and Tobago,Trinidad and Tobago,1389858
+190,TUN,TN,15536,Tunisia,10104685,NorthAfrica,TUN,Tunisia,Tunisia,11565204
+191,TUR,TR,76963,Turkey,72969723,Asia,TUR,Turkey,Turkey,82319724
+192,TKM,TM,46993,Turkmenistan,4833266,Asia,TKM,Turkmenistan,Turkmenistan,5850908
+193,TCA,TC,0,Turks and Caicos Islands,24459,Caribbean,TCA,Turks and Caicos Islands,Turks and Caicos Islands,37665
+194,UGA,UG,19710,Uganda,28947181,Sub Saharan Africa,UGA,Uganda,Uganda,42723139
+195,UKR,UA,57935,Ukraine,46917544,Europe,UKR,Ukraine,Ukraine,44622516
+196,ARE,AE,8360,United Arab Emirates,4104291,Asia,ARE,United Arab Emirates,United Arab Emirates,9630959
+197,GBR,GB,24193,United Kingdom,60244834,Europe,GBR,United Kingdom,United Kingdom,66488991
+198,USA,US,915896,United States,299846449,North America,USA,United States,United States,327167434
+199,URY,UY,17502,Uruguay,3325727,Latin America,URY,Uruguay,Uruguay,3449299
+200,UZB,UZ,42540,Uzbekistan,26593123,Asia,UZB,Uzbekistan,Uzbekistan,32955400
+201,VUT,VU,1219,Vanuatu,215366,Asia,VUT,Vanuatu,Vanuatu,292680
+202,VEN,VE,88205,Venezuela,26725573,Latin America,VEN,Venezuela,Venezuela,28870195
+203,VNM,VN,32549,Vietnam,85028643,Asia,VNM,Viet Nam,Vietnam,95540395
+204,ESH,EH,0,Western Sahara,440428,NorthAfrica,ESH,Western Sahara,Western Sahara,0
+205,WSM,WS,283,Western Samoa,183845,Pacific,WSM,Samoa,Western Samoa,196130
+206,YEM,YE,52797,Yemen,21095679,Asia,YEM,Yemen,Yemen,28498687
+207,SRB,RS,0,Yugoslavia,9863026,Europe,YUG,Serbia,Yugoslavia,6982084
+208,COD,CD,226705,Zaire,58740547,Sub Saharan Africa,ZAR,Democratic Republic of the Congo,Zaire,84068091
+209,ZMB,ZM,74339,Zambia,11478317,Sub Saharan Africa,ZMB,Zambia,Zambia,17351822
+210,ZWE,ZW,38685,Zimbabwe,13119679,Sub Saharan Africa,ZWE,Zimbabwe,Zimbabwe,14439018

@@ -9,7 +9,7 @@ export default function DataPanel(props:Props) {
     let pop;
     let name;
     if (props.country) {
-        name = props.country.name
+        name = props.country.NAME_12
         pop = (parseInt(props.country.POP2018) / 1000000).toFixed(2)
         pop = pop.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
