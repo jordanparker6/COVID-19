@@ -7,7 +7,7 @@ export type CSVData = {
     Country_Region: string, 
     Providence_State: string,
     Difference: number,
-    Lastest_Date: number,
+    Latest_Date: number,
     Prep_Flow_Runtime: string
 }
 

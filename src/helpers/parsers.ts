@@ -37,7 +37,7 @@ export function parseCSV(csv: d3.DSVRowArray): CSVData[] {
         row.Date = moment(row.Date, "MM/DD/YYYY").valueOf()
         row.Lat = parseFloat(row.Lat as string);
         row.Long = parseFloat(row.Long as string);
-        row.Latest_Date = moment(row.Date, "MM/DD/YYYY").valueOf()
+        row.Latest_Date = moment(row.Latest_Date, "MM/DD/YYYY").valueOf()
         return row;
     });
   }

@@ -18,10 +18,11 @@ const geoJSONPath = 'geojson/countries.geojson';
 
 export default function App() {
   const minDate = moment('1/22/2020', "MM/DD/YYYY").valueOf()
-  let maxDate = moment('3/19/2020', "MM/DD/YYYY").valueOf()
+  const initialMaxDate = moment('3/13/2020', "MM/DD/YYYY").valueOf()
 
   const [country, setCountry] = useState<CountryData | null>(null);
-  const [date, setDate] = useState<number>(maxDate);
+  const [date, setDate] = useState<number>(initialMaxDate);
+  const [maxDate, setMaxDate] =useState<number>(initialMaxDate);
   const [csv, setCSV] = useState<CSVData[] | null>(null)
   const [data, setData] = useState<DataObj<CSVData[]> | null>(null);
 
@@ -30,8 +31,14 @@ export default function App() {
 
   function fetchCSV(): void {
     const dataPath = 'data/case_data.csv';
-    d3.csv(dataPath).then(rawCSV => setCSV(parseCSV(rawCSV)));
+    d3.csv(dataPath).then(rawCSV => {
+      const output = parseCSV(rawCSV)
+      setCSV(output);
+      setMaxDate(output[0].Latest_Date);
+      setDate(output[0].Latest_Date);
+    });
   }
+
 
   function filterCSV(csv: CSVData[] | null, date: number): void {
     if (csv) {
@@ -42,7 +49,6 @@ export default function App() {
         recovered: csv.filter(row => row.Date === date && row['Case_Type'] === 'Recovered')
       }
       setData(data)
-      maxDate = csv[0].Lastest_Date
     }
   }
 
