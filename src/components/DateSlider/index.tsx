@@ -53,8 +53,12 @@ export default function DateSlider(props:Props) {
   }
 
   function onClickPlay() {
-    setValue(0);
-    setPlay(true);
+    if (play) {
+      setPlay(false)
+    } else {
+      setValue(0);
+      setPlay(true);
+    }
   }
 
   return (
@@ -78,7 +82,7 @@ export default function DateSlider(props:Props) {
           variant="contained"
           color="primary"
           >
-            Play
+            {(play)? "Pause" : "Play"}
           </Button>
         </div>
         <div className="date-slider-footer">Date Slider</div>    
