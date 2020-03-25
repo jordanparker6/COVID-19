@@ -30,7 +30,7 @@ export default function OverviewTab({ data, country }: Props) {
   const percentFormat = format(',.2%');
   const commaFormat = format(',');
 
-  const mortalityRate = deaths / (recovered + deaths + active)
+  const mortalityRate = deaths / confirmed
   const casesPerCap = (country)? `${customFormat(confirmed / parseInt(country.POP2018) * 100000)} cases per 100,000`: null
 
   return (
