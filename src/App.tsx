@@ -53,7 +53,6 @@ export default function App() {
   }
 
   if (data) {
-
     return (
       <div id="App">
         <Map geoJSONPath={geoJSONPath} data={data.confirmed} onClickDataPoint={(d) => setCountry(d)}/>

@@ -17,7 +17,7 @@ export default function OverviewTab({ data, country }: Props) {
   const donutData = [
     { label: "Recovered", value: recovered },
     { label: "Deaths", value: deaths },
-    { label: "Active", value: active }
+    { label: "Active", value: confirmed - recovered - deaths }
   ] as PieData[]
 
   function customFormat(data: number) {

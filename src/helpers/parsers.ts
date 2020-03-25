@@ -8,7 +8,7 @@ export function parseData(data: DataObj<CSVData[]>, country: CountryData | null)
         status.forEach((k: keyof Data) => {
           const v = data[k];
           if (v) {
-            const result = v.filter(d => country.name === d.Country_Region);
+            const result = v.filter(d => country.ISO_2_CODE === d['ISO3166-1'] || country.name === d.Country_Region);
             if (result.length > 1) {
               output[k] = d3.sum(result.map(d => d.Cases));
             } else if (result && result.length) {
