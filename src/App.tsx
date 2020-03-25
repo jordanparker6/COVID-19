@@ -32,13 +32,13 @@ export default function App() {
   function fetchCSV(): void {
     const dataPath = 'data/case_data.csv';
     d3.csv(dataPath).then(rawCSV => {
-      const output = parseCSV(rawCSV)
+      const output = parseCSV(rawCSV);
+      const maxDate = d3.max(output, row => row.Date) as number
       setCSV(output);
-      setMaxDate(output[0].Latest_Date);
-      setDate(output[0].Latest_Date);
+      setMaxDate(maxDate);
+      setDate(maxDate);
     });
   }
-
 
   function filterCSV(csv: CSVData[] | null, date: number): void {
     if (csv) {

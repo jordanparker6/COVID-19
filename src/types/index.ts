@@ -8,7 +8,8 @@ export type CSVData = {
     Providence_State: string,
     Difference: number,
     Latest_Date: number,
-    Prep_Flow_Runtime: string
+    'ISO3166-1': string,
+    'ISO3166-2': string
 }
 
 export type Data = {

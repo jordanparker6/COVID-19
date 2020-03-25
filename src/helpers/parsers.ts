@@ -1,5 +1,4 @@
 import * as d3 from 'd3';
-import moment from 'moment';
 import { DataObj, CSVData, Data, CountryData } from '../types';
 
 export function parseData(data: DataObj<CSVData[]>, country: CountryData | null): DataObj<number> {
@@ -34,10 +33,10 @@ export function parseCSV(csv: d3.DSVRowArray): CSVData[] {
     return csv.map((row: any) => {
         row.Cases = parseInt(row.Cases as string);
         row.Difference = parseInt(row.Difference as string);
-        row.Date = moment(row.Date, "MM/DD/YYYY").valueOf()
+        row.Date = Date.parse(row.Date)
         row.Lat = parseFloat(row.Lat as string);
         row.Long = parseFloat(row.Long as string);
-        row.Latest_Date = moment(row.Latest_Date, "MM/DD/YYYY").valueOf()
+        row.Latest_Date = Date.parse(row.Latest_Date)
         return row;
     });
   }
