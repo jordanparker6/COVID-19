@@ -15,6 +15,7 @@ import ContactIcons from './components/ContactIcons';
 
 
 const geoJSONPath = 'geojson/countries.geojson';
+const dataPath = 'case_data.csv'
 
 export default function App() {
   const minDate = moment('1/22/2020', "MM/DD/YYYY").valueOf()
@@ -29,8 +30,7 @@ export default function App() {
   useEffect(fetchCSV, [])
   useEffect(() => filterCSV(csv!, date), [csv, date])
 
-  function fetchCSV(): void {
-    const dataPath = 'data/case_data.csv';
+  function fetchCSV(): void {;
     d3.csv(dataPath).then(rawCSV => {
       const output = parseCSV(rawCSV);
       const maxDate = d3.max(output, row => row.Date) as number
