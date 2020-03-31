@@ -15,7 +15,7 @@ import ContactIcons from './components/ContactIcons';
 
 
 const geoJSONPath = 'geojson/countries.geojson';
-const dataPath = 'case_data.csv'
+const dataPath = 'data/case_data.csv'
 
 export default function App() {
   const minDate = moment('1/22/2020', "MM/DD/YYYY").valueOf()
