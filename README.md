@@ -26,6 +26,7 @@ Then view https://localhost:3000 in the browser.
 
 ## Procfile
 
+The create-react-app buildfile for Heroku is used for deployment: https://github.com/mars/create-react-app-buildpack. This servers a static html page and reverse proxies based on the static.json file within this repo.
 
 
 

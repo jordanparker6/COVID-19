@@ -12,7 +12,7 @@ export type Props = {
 }
 
 export default function OverviewTab({ data, country }: Props) {
-  const {active, deaths, recovered, confirmed } = data
+  const {deaths, recovered, confirmed } = data
 
   const donutData = [
     { label: "Recovered", value: recovered },

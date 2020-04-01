@@ -14,7 +14,6 @@ export type CSVData = {
 
 export type Data = {
     confirmed: number,
-    active: number,
     deaths: number,
     recovered: number
 }

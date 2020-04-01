@@ -45,7 +45,6 @@ export default function App() {
       const data = {
         confirmed: csv.filter(row => row.Date === date && row['Case_Type'] === 'Confirmed'),
         deaths: csv.filter(row => row.Date === date && row['Case_Type'] === 'Deaths'),
-        active: csv.filter(row => row.Date === date && row['Case_Type'] === 'Active'),
         recovered: csv.filter(row => row.Date === date && row['Case_Type'] === 'Recovered')
       }
       setData(data)
