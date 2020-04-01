@@ -2,8 +2,8 @@ import * as d3 from 'd3';
 import { DataObj, CSVData, Data, CountryData } from '../types';
 
 export function parseData(data: DataObj<CSVData[]>, country: CountryData | null): DataObj<number> {
-    let output: Data = { confirmed: 0, deaths: 0, active: 0, recovered: 0 };
-    const status = ['confirmed', 'active', 'deaths', 'recovered'] as (keyof Data)[];
+    let output: Data = { confirmed: 0, deaths: 0,  recovered: 0 };
+    const status = ['confirmed', 'deaths', 'recovered'] as (keyof Data)[];
       if (country) {
         status.forEach((k: keyof Data) => {
           const v = data[k];
