@@ -12,7 +12,7 @@ type TabProps = {
     country : string | null
 }
 
-export default function ForecastTab(props : TabProps) {
+export default function ForecastTab() {
 
 
 
@@ -54,7 +54,6 @@ const config : ChartConfig = {
       <React.Fragment>
         <div className="tile">
           <div className="tile-title">ForecastData</div>
-          <LineChart data={transform_data(props)} config={config} />
         </div>
         <div className="tile">
           <div className="tile-title">DataTest</div>
