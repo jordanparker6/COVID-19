@@ -11,6 +11,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-swipeable-views": "^0.13.0",
     "csv-parse": "^4.8.8",
+    "crossfilter2": "^1.5.2",
     "d3": "^5.15.0",
     "moment": "^2.24.0",
     "react": "^16.13.0",

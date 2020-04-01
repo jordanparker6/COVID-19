@@ -109,4 +109,5 @@ def download_data():
     forecast_df = load_forecast_data(df.rename(columns = dict(zip(cols, header))))
     df.to_csv('case_data.csv', index=False, header=header)
     forecast_df.to_json('forecast_data.json', orient='records')
+    forecast_df.to_csv('forecast_data.csv')
 download_data()

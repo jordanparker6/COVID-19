@@ -32,4 +32,20 @@ export type CountryData = {
     POP2018: string
 }
 
+export type ForecastData = {
+    Date: number,
+    Country: string,
+    ExpandingBeta: number,
+    Rolling3Day_Beta: number,
+    Rolling5Day_Beta: number,
+    Rolling7Day_Beta: number,
+    Rolling10Day_Beta: number,
+    Forecast_Expanding: number,
+    Forecast_3D: number,
+    Forecast_5D: number,
+    Forecast_7D: number,
+    Forecast_10D: number
+}
+
+
 export type DataObj<T> = Record<keyof Data, T>
