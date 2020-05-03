@@ -1,7 +1,7 @@
 .tile {
     display: flex;
     flex-direction: column;
-    height: 272px;
+    height: 18rem;
     align-items: stretch;
     padding: 0.5rem;
     position: relative;
