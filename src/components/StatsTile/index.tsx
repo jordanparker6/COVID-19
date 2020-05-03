@@ -124,11 +124,11 @@ const StatsTile = (props:Props) => {
       position: "relative"
     },
     value: {
-      fontSize: "5rem",
+      fontSize: "3rem",
       color: props.color,
       flexGrow: 1,
       display: "flex",
-      paddingTop: "4rem",
+      paddingTop: "8vh",
       justifyContent: "center"
     },
     label: {
