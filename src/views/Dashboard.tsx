@@ -61,10 +61,10 @@ const Dashboard = ({ confirmed, totals }: Props) => {
         <Grid item lg={3} md={4} xs={12}>
           <DataPanel>
             <OverviewTab data={data.totals} country={country} date={date}/>
-            <div>
+            <Grid item>
               <div>Forecast Tab</div>
               <div>Under Development</div>
-            </div>
+            </Grid>
           </DataPanel>
         </Grid>
       </Grid>
