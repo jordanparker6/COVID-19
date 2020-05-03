@@ -3,22 +3,9 @@ import * as d3 from 'd3';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 import './App.css';
-<<<<<<< HEAD
 import Dashboard from './views/Dashboard';
 import LoadingPage from './views/LoadingPage';
 import { CSVData, ForecastData } from './types';
-=======
-import { CSVData, DataObj, CountryData, ForecastData} from './types';
-import { parseData, parseCSV } from './helpers/parsers'
-import Map from './components/Map';
-import DataPanel from './components/DataPanel';
-import OverviewTab from './components/OverviewTab';
-import ForecastTab from './components/ForecastTab';
-import InfoBox from './components/InfoBox';
-import DateSlider from './components/DateSlider';
-import ContactIcons from './components/ContactIcons';
-
->>>>>>> 6329c2beadf63a06d27bb03426d3cc743290767d
 
 const geoJSONPath = 'geojson/countries.geojson';
 const dataPath = 'data/case_data.csv'
@@ -36,40 +23,22 @@ const theme = createMuiTheme({
       }
     });
 
-<<<<<<< HEAD
 export default function App() {
   const [data, setData] = useState<CSVData[]> | null>(null);
   const [fcast_data, setForecastData] = useState<ForecastData[]> | null>(null);
-=======
-  const [country, setCountry] = useState<CountryData | null>(null);
-  const [date, setDate] = useState<number>(initialMaxDate);
-  const [maxDate, setMaxDate] =useState<number>(initialMaxDate);
-  const [csv, setCSV] = useState<CSVData[] | null>(null)
-  const [data, setData] = useState<DataObj<CSVData[]> | null>(null);
-  const [fcast_data, setForecastData] = useState<Array<ForecastData> | null>(null);
->>>>>>> 6329c2beadf63a06d27bb03426d3cc743290767d
 
   useEffect(fetchCSV, [])
 
-<<<<<<< HEAD
   function fetchCSV(): void {
-=======
-  function fetchCSV(): void {;
-    const forecastPath = 'data/forecast_data.json'
->>>>>>> 6329c2beadf63a06d27bb03426d3cc743290767d
     d3.csv(dataPath).then(rawCSV => {
       const output = parseCSV(rawCSV);
       const maxDate = d3.max(output, row => row.Date) as number
       setData(output)
     });
-<<<<<<< HEAD
   }
   
   function fetchForecast() {
     d3.json('data/forecast_data.json').then(d => {
-=======
-    d3.json(forecastPath).then(d => {
->>>>>>> 6329c2beadf63a06d27bb03426d3cc743290767d
         const fcast = d.map(
         function(row : any){
         if (row['Country'] == 'China'){console.log(row)}
@@ -89,7 +58,6 @@ export default function App() {
         } as ForecastData
         } );
         setForecastData(fcast);
-<<<<<<< HEAD
     });
   }
 
@@ -98,48 +66,4 @@ export default function App() {
       {(data) ? <Dashboard/> : <LoadingPage/>}
     </ThemeProvider>
   ); 
-=======
-  })}
-
-
-
-  function filterCSV(csv: CSVData[] | null, date: number): void {
-    if (csv) {
-      const data = {
-        confirmed: csv.filter(row => row.Date === date && row['Case_Type'] === 'Confirmed'),
-        deaths: csv.filter(row => row.Date === date && row['Case_Type'] === 'Deaths'),
-        recovered: csv.filter(row => row.Date === date && row['Case_Type'] === 'Recovered')
-      }
-      setData(data)
-    }
-  }
-
-  if (data && fcast_data) {
-    return (
-      <div id="App">
-        <Map geoJSONPath={geoJSONPath} data={data.confirmed} onClickDataPoint={(d) => setCountry(d)}/>
-        <DataPanel>
-          <OverviewTab data={parseData(data, country)} country={country}/>
-          <ForecastTab data={fcast_data} country={country == null ? null : country.NAME_1}/>
-        </DataPanel>
-        <InfoBox country={country}/>
-        <div id="bottom-container">
-          <DateSlider date={date} minDate={minDate} maxDate={maxDate} onChange={(date: number) => setDate(date)}/>
-          <ContactIcons/>
-      </div>
-      
-    </div>
-  );
-
-  } else {
-
-    return (
-      <div id="loading-page">
-        <LinearProgress/>
-      </div>
-        
-    );
-    
-  }
->>>>>>> 6329c2beadf63a06d27bb03426d3cc743290767d
 }

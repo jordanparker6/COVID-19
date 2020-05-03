@@ -112,9 +112,4 @@ export default function LineChart(props: Props) {
             divElement
         }
         />)
-<<<<<<< HEAD
     }
-=======
-    }
-
->>>>>>> 6329c2beadf63a06d27bb03426d3cc743290767d
