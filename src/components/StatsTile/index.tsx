@@ -107,6 +107,9 @@ const StatsTile = (props:Props) => {
 
   // Componet Styles
   const useStyles = makeStyles({
+    root: {
+      position: "relative"
+    },
     chart: {
       bottom: 0,
       opacity: 0.5,
@@ -117,7 +120,8 @@ const StatsTile = (props:Props) => {
       flexDirection: "column",
       height: "272px",
       alignItems: "stretch",
-      padding: "0.5rem"
+      padding: "0.5rem",
+      position: "relative"
     },
     value: {
       fontSize: "5rem",
@@ -178,7 +182,7 @@ const StatsTile = (props:Props) => {
   }, [ref, chartConfig]);
 
   return (
-    <Card className="stats-tile">
+    <Card className={classes.root}>
         <div className={classes.container}>
             <div className={classes.header}>
               <span className={classes.label}>{label}</span> 

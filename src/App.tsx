@@ -6,9 +6,7 @@ import './App.css';
 import Dashboard from './views/Dashboard';
 import LoadingPage from './views/LoadingPage';
 import { CSVData, ForecastData } from './types';
-
-const geoJSONPath = 'geojson/countries.geojson';
-const dataPath = 'data/case_data.csv'
+import { parseCSV } from './helpers/parsers';
 
 const theme = createMuiTheme({
   palette: {
@@ -20,20 +18,31 @@ const theme = createMuiTheme({
         secondary: {
           main: '#242424',
         }
-      }
-    });
+      },
+  overrides: {
+    MuiCard: {
+      root: {
+        borderRadius: "10px",
+        backgroundColor: '#242424',
+        display: "flex",
+        flexDirection: "column"
+      },
+    }
+  }
+  });
 
 export default function App() {
-  const [data, setData] = useState<CSVData[]> | null>(null);
-  const [fcast_data, setForecastData] = useState<ForecastData[]> | null>(null);
+  const [confirmed, setConfirmed] = useState<CSVData[] | null>(null);
+  const [total, setTotal] = useState<CSVData[] | null>(null);
+  const [fcast_data, setForecastData] = useState<ForecastData[] | null>(null);
 
-  useEffect(fetchCSV, [])
+  useEffect(() => fetchData('data/agg_data.csv', setTotal), []);
+  useEffect(() => fetchData('data/confirmed_cases.csv', setConfirmed), []);
 
-  function fetchCSV(): void {
-    d3.csv(dataPath).then(rawCSV => {
+  function fetchData(url, callback): void {
+    d3.csv(url).then(rawCSV => {
       const output = parseCSV(rawCSV);
-      const maxDate = d3.max(output, row => row.Date) as number
-      setData(output)
+      callback(output)
     });
   }
   
@@ -63,7 +72,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {(data) ? <Dashboard/> : <LoadingPage/>}
+       {(confirmed && total) ? <Dashboard confirmed={confirmed} totals={total}/> : <LoadingPage/>}
     </ThemeProvider>
   ); 
 }

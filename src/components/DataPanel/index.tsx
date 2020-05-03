@@ -10,11 +10,12 @@ import "./index.css"
 const style = {
     pannel: {
         flexGrow: 1,
+        overflow: "hidden"
     },
     container: {
         height: "100%",
         padding: "1rem",
-        display: "flex"
+        display: "flex",
     }
 }
 

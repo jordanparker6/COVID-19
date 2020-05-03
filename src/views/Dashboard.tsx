@@ -45,7 +45,7 @@ const Dashboard = ({ confirmed, totals }: Props) => {
   }
 
   return (
-      <Grid className="dashboard" container spacing={1}>
+      <Grid id="dashboard" container spacing={1}>
         <Hidden smDown={true}>
           <Grid item md={8} lg={9} style={{ position: "relative" }}>
 
