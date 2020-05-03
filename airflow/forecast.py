@@ -1,5 +1,6 @@
-import numpy as np
 import pandas as pd
+import numpy as np
+
 
 def beta(data):
     current = data.values
@@ -100,7 +101,13 @@ def load_forecast_data(df):
     df_out.columns = ['Date','Country','Expanding Beta','Rolling 3 Day Beta',' Rolling 5 Day Beta', 'Rolling 7 Day Beta','Rolling 10 Day Beta','Forecast (Expanding)','Forecast (3D)','Forecast (5D)','Forecast (7D)','Forecast (10D)']
     return df_out
 
-def main():
-    df = pd.read_csv('case_data.csv')
-    forecast_df = load_forecast_data(df)
-    df.to_csv('case_data.csv', index=False)
+def download_data():
+    url = 'https://s3-us-west-1.amazonaws.com/starschema.covid/JHU_COVID-19.csv'
+    cols = ['Country/Region', 'Province/State',	'Date', 'Case_Type', 'Cases', 'Long', 'Lat', 'ISO3166-1', 'ISO3166-2', 'Difference', 'Last_Update_Date']
+    header = ['Country_Region', 'Province_State',	'Date', 'Case_Type', 'Cases', 'Long', 'Lat', 'ISO3166-1', 'ISO3166-2', 'Difference', 'Latest_Date']
+    df = pd.read_csv(url, usecols=cols)
+    forecast_df = load_forecast_data(df.rename(columns = dict(zip(cols, header))))
+    df.to_csv('case_data.csv', index=False, header=header)
+    forecast_df.to_json('forecast_data.json', orient='records')
+    forecast_df.to_csv('forecast_data.csv')
+download_data()

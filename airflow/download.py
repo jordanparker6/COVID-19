@@ -21,14 +21,15 @@ urls = {
 
 def main():
     date = dt.today().strftime('%Y.%m.%d')
-    datasets = ['confirmed', 'recovered', 'deaths']
+    datasets = ['confirmed', 'recovered', 'deaths', 'mappings']
     for dataset in datasets:
-        for k, url in urls[dataset].items():
-            _dir = '{}/{}/{}'.format(date, dataset, k)
-            os.makedirs(_dir)
+        _dir = '{}/{}'.format(date, dataset)
+        os.makedirs(_dir)
+        for item, url in urls[dataset].items():
             print("Downloading from: ", url)
             df = pd.read_csv(url)
-            df.to_csv('{}/{}'.format(_dir, "jhu_data.csv"))
+            df['Source'] = url
+            df.to_csv('{}/{}'.format(_dir, "JHU-{}-{}.csv".format(dataset, item)), index=False)
 
 if __name__ == "__main__":
     main()

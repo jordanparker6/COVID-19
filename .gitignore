@@ -2,3 +2,4 @@ node_modules
 /node_modules
 yarn-debug.log
 .DS_Store
+./public/data/*

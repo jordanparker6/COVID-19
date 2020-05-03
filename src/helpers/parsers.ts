@@ -1,42 +1,27 @@
 import * as d3 from 'd3';
-import { DataObj, CSVData, Data, CountryData } from '../types';
+import moment from 'moment'
+import { CSVData, CountryData, TotalsData } from '../types';
 
-export function parseData(data: DataObj<CSVData[]>, country: CountryData | null): DataObj<number> {
-    let output: Data = { confirmed: 0, deaths: 0, active: 0, recovered: 0 };
-    const status = ['confirmed', 'active', 'deaths', 'recovered'] as (keyof Data)[];
+export function aggCountry(data: CSVData[], country: CountryData | null, case_type: string): TotalsData[] {
+      let result = data.filter(row => row.Case_Type === case_type && row.Country_Region === "GLOBAL").map(x => ({ Cases: x.Cases, Date: x.Date }));
       if (country) {
-        status.forEach((k: keyof Data) => {
-          const v = data[k];
-          if (v) {
-            const result = v.filter(d => country.ISO_2_CODE === d['ISO3166-1'] || country.name === d.Country_Region);
-            if (result.length > 1) {
-              output[k] = d3.sum(result.map(d => d.Cases));
-            } else if (result && result.length) {
-                output[k] = result[0].Cases;
-            } else {
-                output[k] = 0;
-            }
+          const d = data.filter(row => row.Case_Type === case_type && ( row.iso3 === country.ISO_3_CODE || country.name === row.Country_Region ));
+          if (d.length <= 0) {
+            result = result.map(x => ({ ...x, Cases: 0 }))
+          } else {
+            result = d.map(x => ({ Cases: x.Cases, Date: x.Date }));
           }
-        });
-      } else {
-        status.forEach((k: keyof Data) => {
-          const v = data[k];
-          if (v) {
-            output[k] = d3.sum(v.map(d => d.Cases));
-          }
-        });
       }
-      return output;
+      return result;
   }
 
 export function parseCSV(csv: d3.DSVRowArray): CSVData[] {
+    const daysConst = 1000 * 60 * 60 * 24
     return csv.map((row: any) => {
-        row.Cases = parseInt(row.Cases as string);
-        row.Difference = parseInt(row.Difference as string);
-        row.Date = Date.parse(row.Date)
+        row.Cases = parseFloat(row.Cases as string);
+        row.Date = Math.floor(moment(row.Date).valueOf() / daysConst) * daysConst
         row.Lat = parseFloat(row.Lat as string);
         row.Long = parseFloat(row.Long as string);
-        row.Latest_Date = Date.parse(row.Latest_Date)
         return row;
     });
   }

@@ -22,5 +22,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 100%;
+}
+
+:root {
+  --primary: #9d53fc;
+  --secondary: #242424;
 }

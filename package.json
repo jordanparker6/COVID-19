@@ -5,11 +5,16 @@
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
+    "@types/chart.js": "^2.9.19",
     "@types/d3": "^5.7.2",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-swipeable-views": "^0.13.0",
+    "@types/shortid": "^0.0.29",
+    "chart.js": "^2.9.3",
+    "classnames": "^2.2.6",
+    "crossfilter2": "^1.5.2",
     "csv-parse": "^4.8.8",
     "d3": "^5.15.0",
     "moment": "^2.24.0",
@@ -17,6 +22,7 @@
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
     "react-swipeable-views": "^0.13.9",
+    "shortid": "^2.2.15",
     "typescript": "~3.7.2"
   },
   "scripts": {
@@ -39,6 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "https://covid-19.nyc3.digitaloceanspaces.com/"
+  }
 }

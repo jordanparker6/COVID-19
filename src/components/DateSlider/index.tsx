@@ -18,7 +18,7 @@ const theme = createMuiTheme({
             }
           });
 
-export type Props = { date: number, minDate: number, maxDate: number, onChange: (date: number) => void }
+export type Props = { date: number, minDate: number, maxDate: number, onChange: (date: number) => void, timeInterval: number }
 
 export default function DateSlider(props:Props) {
   const minDays = 0;
@@ -44,7 +44,7 @@ export default function DateSlider(props:Props) {
     if (play && (value <= (maxDays -1))) {
       interval = setInterval(() => {
         setDateAndValue(value + 1)
-      }, 250);
+      }, props.timeInterval);
     } else {
       clearInterval(interval!);
       setPlay(false)
@@ -65,7 +65,7 @@ export default function DateSlider(props:Props) {
     
     <ThemeProvider theme={theme}>
       <div id="date-slider">
-        <div className="date-slider-title">WHO Situation Report | {new Date(props.date).toDateString()}</div>
+        <div className="date-slider-title">WHO Situation Report | {new Date(props.date + 1000 * 60 * 60 * 24).toDateString()}</div>
         <div className="date-slider-container">
           <Slider 
           value={value}

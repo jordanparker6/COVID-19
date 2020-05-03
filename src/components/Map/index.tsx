@@ -58,7 +58,7 @@ export default function Map(props: Props) {
     }
 
     return (
-        <svg id="map" ref={ref}/>
+        <svg className="map" ref={ref}/>
     )
 }
 

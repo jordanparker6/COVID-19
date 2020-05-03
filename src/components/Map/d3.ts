@@ -25,7 +25,7 @@ export default class D3Component {
         this.path = d3.geoPath().projection(this.projection);
         this.selected = null;
         this.data = null;
-        this.radius = d3.scaleSqrt().domain([0, 1000]).range([0, 2])
+        this.radius = d3.scaleSqrt().domain([0, 1000]).range([0, 1])
         this.loadMapShapes();
     }
 

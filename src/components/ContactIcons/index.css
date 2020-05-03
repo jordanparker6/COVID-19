@@ -4,7 +4,8 @@
 }
 
 .contact-icon svg {
-    width: 4vw;
-    height: 4vh;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
     color: white;
 }
