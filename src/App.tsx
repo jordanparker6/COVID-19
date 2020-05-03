@@ -72,7 +72,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-       {(confirmed && total) ? <Dashboard confirmed={confirmed} totals={total}/> : <LoadingPage/>}
+       {(confirmed && total) ? <Dashboard confirmed={confirmed!} totals={total!}/> : <LoadingPage/>}
     </ThemeProvider>
   ); 
 }
