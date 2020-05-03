@@ -118,7 +118,7 @@ const StatsTile = (props:Props) => {
     container: {
       display: "flex",
       flexDirection: "column",
-      height: "18rem",
+      height: "25vh",
       alignItems: "stretch",
       padding: "0.5rem",
       position: "relative"
