@@ -16,6 +16,7 @@
     "classnames": "^2.2.6",
     "crossfilter2": "^1.5.2",
     "csv-parse": "^4.8.8",
+    "crossfilter2": "^1.5.2",
     "d3": "^5.15.0",
     "moment": "^2.24.0",
     "react": "^16.13.0",
