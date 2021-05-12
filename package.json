@@ -12,7 +12,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-swipeable-views": "^0.13.0",
     "@types/shortid": "^0.0.29",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "classnames": "^2.2.6",
     "crossfilter2": "^1.5.2",
     "csv-parse": "^4.8.8",
